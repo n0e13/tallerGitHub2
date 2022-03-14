@@ -1,14 +1,14 @@
 let btnSubmit = document.getElementById('btn');
 let aNamePass = [];
+let user = document.getElementById('name');
+let pass = document.getElementById('pass');
 
-btnSubmit.addEventListener('submit', function (event) {
+btnSubmit.addEventListener('click', function (event) {
     event.preventDefault();
-    let name = document.getElementById('name').value;
-    let pass = document.getElementById('pass').value;
 
     let oAux = {
-        user: name,
-        pass: pass
+        user: user.value,
+        pass: pass.value
     };
 
     aNamePass.push(oAux);
