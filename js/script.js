@@ -1,10 +1,13 @@
 let btnSubmit = document.getElementById('btn');
 let aNamePass = [];
 
-btnSubmit.addEventListener('submit', function (event) {
+let name = document.getElementById('name').value;
+let pass = document.getElementById('pass').value;
+
+btnSubmit.addEventListener('click', function (event) {
     event.preventDefault();
-    let name = document.getElementById('name');
-    let pass = document.getElementById('pass');
+
+   
 
     let oAux = {
         user: name,
