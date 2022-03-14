@@ -2,7 +2,7 @@ let btnSubmit = document.querySelector('input[type="submit"]');
 let aNamePass = [];
 
 btnSubmit.addEventListener('submit', function (event) {
-    event.defaultPrevented();
+    event.preventDefault();
     let name = document.getElementById('name');
     let pass = document.getElementById('pass');
 
