@@ -1,4 +1,4 @@
-let btnSubmit = document.querySelector('input[type="submit"]');
+let btnSubmit = document.getElementById('btn');
 let aNamePass = [];
 
 btnSubmit.addEventListener('submit', function (event) {
